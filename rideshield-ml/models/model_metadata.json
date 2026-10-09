@@ -1,0 +1,21 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 100,
+  "classes": [
+    "NORMAL",
+    "HARD_BRAKING",
+    "HARD_CORNERING",
+    "POTHOLE",
+    "POSSIBLE_CRASH"
+  ],
+  "features": [
+    "peak_accel_g",
+    "mean_accel_g",
+    "accel_variance",
+    "peak_gyro_rads",
+    "gyro_variance",
+    "max_jerk",
+    "speed_delta_kmh"
+  ],
+  "accuracy": 1.0
+}

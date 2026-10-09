@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "RideShield",
+    "slug": "rideshield-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "RideShield requires your GPS location to track ride speed and transmit coordinates in case of a crash.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "RideShield monitors crash telemetry and emergency location during your ride.",
+        "NSMotionUsageDescription": "RideShield accesses accelerometer and gyroscope sensors to detect crashes and falls."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0f1d",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "VIBRATE",
+        "SEND_SMS"
+      ],
+      "predictiveBackGestureEnabled": false,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA8SEFUFFnGQvxUzG8ZY4TlBXo4EVs6m_g"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "googleMapsApiKey": "AIzaSyA8SEFUFFnGQvxUzG8ZY4TlBXo4EVs6m_g"
+    }
+  }
+}
+
